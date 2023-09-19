@@ -19,7 +19,7 @@ class IpHost:
 class HostList:
     def __init__(self, count, firstip = ipif("192.168.12.34/24")):
         self.hosts = []
-        for i in range(0,count):
+        for i in range(count):
             _=IpHost(ip=(firstip + (i)), name=generate_hostname())
             self._add_host(ip=_.ip, name=_.name)
 
