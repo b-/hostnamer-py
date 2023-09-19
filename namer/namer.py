@@ -5,10 +5,7 @@ from xkcdpass import xkcd_password as xp
 def generate_hostname(numwords=2, minlength=2, count=1):
     wordfile = xp.locate_wordfile()
     wordlist = xp.generate_wordlist(wordfile=wordfile,min_length=minlength)
-    hostnames = []
-    for hostname in range(0, count):
-        hostnames.append(xp.generate_xkcdpassword(wordlist=wordlist,numwords=numwords,delimiter="-"))
-    return hostnames
+    return xp.generate_xkcdpassword(wordlist=wordlist,numwords=numwords,delimiter="-")
 
 class IpHost:
     """an instance"""

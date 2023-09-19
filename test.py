@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # test.py
 from namer import namer
 from ipaddress import ip_interface as ipaddr
