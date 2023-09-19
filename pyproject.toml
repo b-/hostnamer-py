@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "namer"
+version = "0.1.0"
+description = ""
+authors = ["bri <b@ibeep.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+xkcdpass = "^1.19.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
